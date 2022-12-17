@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Українська спілка</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/music.css">
+
+    <link rel="shortcut icon" href="img/Лого.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="img/Лого.png" alt="logo">
+        <nav>
+            <a href="index.html">Головна</div></a>
+            <a href="music.html">Музика</div></a>
+            <a href="poems.html">Вірші</div></a>
+            <a href="paint.html">Живопис</div></a>
+            <a href="other.html">Інше</div></a>
+        </nav>
+    </header>
+
+    <div class="openBtn"></div>
+
+    <div class="audioList">
+        
+        <div class="audio">
+            <audio><source src="files/music/За читанням Ясунарі Кавабати.mp3" type="audio/mpeg"></audio>
+            <p class="aTag">За читанням Ясунарі Кавабати</p>
+            <div class="aPlay" onclick="playFunc(this)"><div></div></div>
+        </div>
+        <div class="audio">
+            <audio><source src="files/music/Кобзарю....m4a" type="audio/mpeg"></audio>
+            <p class="aTag">Кобзарю...</p>
+            <div class="aPlay" onclick="playFunc(this)"><div></div></div>
+        </div>
+        <div class="audio">
+            <audio><source src="files/music/Возсіявий над сонце.m4a" type="audio/mpeg"></audio>
+            <p class="aTag">Возсіявий над сонце</p>
+            <div class="aPlay" onclick="playFunc(this)"><div></div></div>
+        </div>
+        <div class="audio">
+            <audio><source src="files/music/Вічний революціонер.m4a" type="audio/mpeg"></audio>
+            <p class="aTag">Вічний революціонер</p>
+            <div class="aPlay" onclick="playFunc(this)"><div></div></div>
+        </div>
+        <div class="audio">
+            <audio><source src="files/music/Княжат роських недарма....mp3" type="audio/mpeg"></audio>
+            <p class="aTag">Княжат роських недарма...</p>
+            <div class="aPlay" onclick="playFunc(this)"><div></div></div>
+        </div>
+        <div class="audio">
+            <audio><source src="files/music/Ізидіте дщери.mp3" type="audio/mpeg"></audio>
+            <p class="aTag">Ізидіте дщери</p>
+            <div class="aPlay" onclick="playFunc(this)"><div></div></div>
+        </div>
+        <div class="audio">
+            <audio><source src="files/music/Ярослав Крисько. Кобзарська Традиція.mp3" type="audio/mpeg"></audio>
+            <p class="aTag">Ярослав Крисько. Кобзарська Традиція</p>
+            <div class="aPlay" onclick="playFunc(this)"><div></div></div>
+        </div>
+        
+    </div>
+
+    <script>
+        playB = false
+        var playFunc = function(btn) {
+            btn.classList.toggle("pause")
+            playB = !playB
+            
+            if(playB == true) {
+                btn.parentNode.querySelector("audio").play()
+            } else {
+                btn.parentNode.querySelector("audio").pause()
+            }
+        }
+    </script>
+
+</body>
+
+</html>

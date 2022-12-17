@@ -1,0 +1,71 @@
+.audioList {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+.audioList .audio {
+  width: 80%;
+  margin-left: 5%;
+  border-bottom: 2px #272727 solid;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 3vw;
+}
+.audioList .audio .aPlay {
+  height: 3vw;
+  width: 3vw;
+  background-color: #272727;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 20%;
+}
+.audioList .audio .aPlay div {
+  border-width: 0.75vw 1vw 0.75vw 1vw;
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
+  margin: 0.75vw 0 0 1.1111111111vw;
+}
+.audioList .audio .aPlay:hover div {
+  border-color: transparent transparent transparent #ff4400;
+}
+.audioList .audio .aPlay:hover.pause div {
+  background-color: #ff4400;
+}
+.audioList .audio .aPlay:hover.pause div::after {
+  background-color: #ff4400;
+}
+.audioList .audio .aPlay.pause {
+  height: 3vw;
+  width: 3vw;
+  background-color: #272727;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 20%;
+}
+.audioList .audio .aPlay.pause div {
+  border-width: 0;
+  background-color: #ffffff;
+  height: 50%;
+  width: 13%;
+  margin-left: 35%;
+  position: relative;
+}
+.audioList .audio .aPlay.pause div::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  margin-left: 175%;
+}
+.audioList .audio p {
+  position: absolute;
+  top: 1vh;
+  left: calc(15px + 3vw + 25px);
+  font-size: 1.5vw;
+}/*# sourceMappingURL=music.css.map */

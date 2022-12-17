@@ -1,0 +1,21 @@
+.play {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top: 40%;
+  left: 45%;
+  background-color: #272727;
+  border-radius: 50%;
+}
+.play div {
+  position: absolute;
+  border-width: 2vw 3.5vw 2vw 3.5vw;
+  left: 37.5%;
+  top: 30%;
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
+  transition: all 0.25s ease-in-out;
+}
+.play:hover div {
+  border-color: transparent transparent transparent #ff4400;
+}/*# sourceMappingURL=index.css.map */
